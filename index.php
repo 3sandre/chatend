@@ -12,33 +12,33 @@
     <div class="wrapper">
         <section class="form signup">
             <header>Chat App</header>
-            <form action="#">
+            <form action="#" enctype="multipart/form-data">
                 <div class="txt">
                     This is an error message!
                 </div>
                 <div class="name">
                     <div class="field input">
                         <label>First Name</label>
-                        <input type="text" placeholder="First name">
+                        <input type="text" name="fname" placeholder="First name" required>
                     </div>
                     <div class="field input">
                         <label>Last Name</label>
-                        <input type="text" placeholder="Last name">
+                        <input type="text" name="lname" placeholder="Last name" required>
                     </div>
                     
                 </div>
                 <div class="field input">
                     <label>Email Address</label>
-                    <input type="text" placeholder="Enter email">
+                    <input type="text" name="email" placeholder="Enter email" required>
                 </div>
                 <div class="field input">
                     <label>Password </label>
-                    <input type="password" placeholder="Enter password">
+                    <input type="password" name="password" placeholder="Enter password" required>
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="field image">
                     <label>Select image</label>
-                    <input type="file">
+                    <input type="file" name="image" required>
                 </div>
                 <div class="field button">
                     <input type="submit" value="Continue to Chat">
@@ -50,5 +50,6 @@
         </section>
     </div>
     <script src="javascript/show.js"></script>
+    <script src="javascript/signup.js"></script>
 </body>
 </html>
